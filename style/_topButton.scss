@@ -1,0 +1,25 @@
+#topBtn {
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+	-webkit-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+	position: fixed;
+	bottom: 1em;
+	right: 2em;
+	z-index: 99;
+	border: solid $accent-green;
+	border-radius: 0;
+	border-width: 0 0.6rem 0.6rem 0;
+	outline: none;
+	background-color: transparent;
+	color: $dark-color;
+	cursor: pointer;
+	padding: 1em;
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+}
+
+#topBtn:hover {
+	border-color: $bright-color;
+}

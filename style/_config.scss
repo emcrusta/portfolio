@@ -1,0 +1,23 @@
+$dark-font: #0b0c10;
+$light-font: #c5c6c7;
+$dark-color: #1f2833;
+$bright-color: #66fcf1;
+$accent-green: #45a29e;
+
+@mixin transition-ease {
+	transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+	@if (lightness($color) > 40%) {
+		@return $dark-font;
+	} @else {
+		@return $light-font;
+	}
+}
+
+@mixin media-md {
+	@media screen and (min-width: 600px) {
+		@content;
+	}
+}

@@ -1,0 +1,134 @@
+.hero {
+	min-height: 100vh;
+	background: linear-gradient(
+			to right,
+			rgba($dark-color, 0.5),
+			rgba($dark-color, 0.05)
+		),
+		url('../imgs/pexels-adrien-olichon-2387793.jpg') center top;
+	background-size: cover;
+
+	.hero__title {
+		margin: 0;
+		margin-top: 30vh;
+		padding: 0.2em 0;
+		text-transform: uppercase;
+		text-align: center;
+		color: $bright-color;
+		font-size: 5rem;
+		border-bottom: 2px solid $bright-color;
+	}
+
+	.hero__subtitle {
+		text-transform: uppercase;
+		text-align: center;
+		color: $bright-color;
+		font-size: 3rem;
+		margin: 0.5em 0;
+	}
+}
+
+.about_section {
+	.col {
+		padding-bottom: 1em;
+	}
+}
+
+.projects {
+	padding: 0;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 1rem;
+
+	li {
+		background-color: rgba(252, 252, 252, 0.3);
+		border-radius: 0.5rem;
+
+		figure {
+			max-height: 380px;
+			overflow: hidden;
+			border-top-left-radius: 0.5rem;
+			border-top-right-radius: 0.5rem;
+			position: relative;
+
+			img {
+				width: 100%;
+			}
+
+			figcaption {
+				position: absolute;
+				bottom: 0;
+				background-color: rgba($dark-color, 0.9);
+				width: 100%;
+
+				h3 {
+					color: #fff;
+					padding: 0.75rem;
+					font-size: 1.25rem;
+					font-weight: 400;
+				}
+			}
+		}
+
+		p {
+			font-size: 1rem;
+			line-height: 1.5;
+			padding: 1rem 0.75rem;
+		}
+
+		a {
+			text-decoration: none;
+			background-color: $dark-color;
+			border-radius: 0.25rem;
+			text-align: center;
+			display: inline-block;
+			padding: 0.5rem 0.8rem;
+			margin: 0.5rem;
+			font-weight: 500;
+			color: #fff;
+
+			&:hover {
+				@include transition-ease;
+				background-color: $accent-green;
+			}
+		}
+	}
+}
+
+.contact_section {
+	padding-bottom: 4rem;
+
+	.row {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.social-icons {
+		list-style-type: none;
+
+		i {
+			font-size: 4rem;
+			color: $dark-color;
+
+			&:hover {
+				@include transition-ease;
+				color: $accent-green;
+			}
+		}
+	}
+}
+
+.footer {
+	min-height: 200px;
+	background-color: $dark-color;
+	color: white;
+	padding: 2em;
+
+	.row {
+		justify-content: space-between;
+	}
+
+	.col {
+		padding-bottom: 1em;
+	}
+}
