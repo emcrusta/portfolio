@@ -1,4 +1,4 @@
-@import 'config', 'home', 'menu', 'topButton';
+@import 'config', 'home', 'menu', 'topButton', 'contact';
 
 *,
 *::before,
@@ -14,7 +14,6 @@ html {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: #f0efef;
 }
 
 h1,
@@ -29,22 +28,35 @@ h3 {
 	text-align: center;
 	color: $dark-font;
 	font-size: 3rem;
-	padding: 0.5em 0;
+	padding-bottom: 1em;
 }
 
 .container {
 	margin: 0 auto;
 	width: 85%;
 	max-width: 900px;
+	padding-bottom: 3em 0;
+}
+
+#about_section {
+	background-color: #f0efef;
+}
+
+#project_section {
+	background-color: #e4e4e4;
+}
+
+#contact_section {
+	background-color: #f0efef;
 }
 
 @include media-md {
-	.row {
-		display: flex;
-	}
-
-	.about_section {
+	#about_section {
 		justify-content: space-between;
+
+		.row {
+			display: flex;
+		}
 
 		.col {
 			width: 100%;
@@ -52,6 +64,12 @@ h3 {
 
 		.col + .col {
 			margin-left: 1.5em;
+		}
+	}
+
+	.footer {
+		.row {
+			display: flex;
 		}
 	}
 }

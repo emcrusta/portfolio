@@ -28,10 +28,10 @@
         <div class="hero">
 		<header>
 			<nav class="nav container">
-				<ul class="row">
-					<li><a href="#about_section">About</a></li>
-					<li><a href="#project_section">Projects</a></li>
-					<li><a href="#contact_section">Contact</a></li>
+				<ul class="nav__list row">
+					<li class="nav__item"><a href="#about_section">About</a></li>
+					<li class="nav__item"><a href="#project_section">Projects</a></li>
+					<li class="nav__item"><a href="#contact_section">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -45,74 +45,83 @@
                 </div>
 				
 			</div>
-			<section id="about_section" class="about_section container">
-				<h2 class="title">About</h2>
-				<div class="row">
-					<div class="col">
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing
-							elit. Esse vel nihil facilis est saepe molestias,
-							tempora cum ab itaque quis laborum, eligendi dolore
-							non magni harum in necessitatibus quisquam. Eaque?
-						</p>
-					</div>
-					<div class="col">
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing
-							elit. Culpa sint consectetur expedita quibusdam
-							magnam placeat aut nobis magni, quod quam illum
-							velit animi eligendi similique impedit repudiandae
-							consequuntur et veniam.
-						</p>
-					</div>
-				</div>
-			</section>
-			<section id="project_section" class="project_section container">
-				<h2 class="title">Projects</h2>
-				<ul class="projects">
-					<li>
-                        <figure>
-                            <img src="./imgs/learning_hindi_site.JPG" alt="learning-hindi mobile redesign">
-                            <figcaption><h3>Learning Hindi Redesign</h3></figcaption>
-                        </figure>
-                        <p>A mobile-first redesign of one of my favorite language-learning resources. Primarily created with HTML and CSS design.</p>
-                        <a href="emcrusta.github.io/hindi-learning-mobile/">View Project</a>
-                        </li>
+			<div id="about_section">
+                <section class="content_section container">
+                    <h2 class="title">About</h2>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit. Esse vel nihil facilis est saepe molestias,
+                                tempora cum ab itaque quis laborum, eligendi dolore
+                                non magni harum in necessitatibus quisquam. Eaque?
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Culpa sint consectetur expedita quibusdam
+                                magnam placeat aut nobis magni, quod quam illum
+                                velit animi eligendi similique impedit repudiandae
+                                consequuntur et veniam.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+			<div id="project_section">
+                <section class="content_section container">
+                    <h2 class="title">Projects</h2>
+                    <ul class="projects">
                         <li>
-                            <figure>
-                                <img src="./imgs/markdown_previewer.JPG" alt="react markdown previewer">
-                                <figcaption><h3>Markdown Previewer</h3></figcaption>
-                            </figure>
-                            <p>Markdown previewer displays markdown in real time.</p>
-                            <a href="https://codepen.io/docdaneeka/full/eYJyapZ">View Project</a>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src="./imgs/portfolio_site.JPG" alt="sample portfolio site">
-                                    <figcaption><h3>Bootstrap Portfolio Site</h3></figcaption>
-                                </figure>
-                                <p>Designed a sample portfolio site to explore Bootstrap functionality.</p>
-                                <a href="https://emcrusta.github.io/fcc-personal-portfolio/">View Project</a>
-                                </li>
-					<li>
-                        <figure>
-                            <img src="./imgs/react_flashcards.JPG" alt="react flashcards project">
-                            <figcaption><h3>Hindi Flashcards</h3></figcaption>
-                        </figure>
-                        <p>A flashcard application created in React. Designed to feature various flashcard packs in JSON format. </p>
-                        <a href="https://github.com/emcrusta/hindi-flashcards">View Project</a>
-                        
-                    </li>
-				</ul>
-			</section>
-			<section id="contact_section" class="contact_section container">
-				<h2 class="title">Contact Me</h2>		
-					<ul class="social-icons row">
-						<li class="col"><a href="mailto:emcrusta@gmail.com"><i class="fas fa-envelope-square"></a></i></li>
-						<li class="col"><a href="https://github.com/emcrusta"><i class="fab fa-github-square"></a></i></li>
-						<li class="col"><a href="https://www.linkedin.com/in/emcrusta/"><i class="fab fa-linkedin"></i></a></li>
-					</ul>
-			</section>
+                                        <figure>
+                                            <img src="./imgs/learning_hindi_site.JPG" alt="learning-hindi mobile redesign">
+                                            <figcaption><h3>Learning Hindi Redesign</h3></figcaption>
+                                        </figure>
+                                        <p>A mobile-first redesign of one of my favorite language-learning resources. Primarily created with HTML and CSS design.</p>
+                                        <a href="https://emcrusta.github.io/hindi-learning-mobile/">View Project</a>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <img src="./imgs/markdown_previewer.JPG" alt="react markdown previewer">
+                                                <figcaption><h3>Markdown Previewer</h3></figcaption>
+                                            </figure>
+                                            <p>Markdown previewer displays markdown in real time.</p>
+                                            <a href="https://codepen.io/docdaneeka/full/eYJyapZ">View Project</a>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="./imgs/portfolio_site.JPG" alt="sample portfolio site">
+                                                    <figcaption><h3>Bootstrap Portfolio Site</h3></figcaption>
+                                                </figure>
+                                                <p>Designed a sample portfolio site to explore Bootstrap functionality.</p>
+                                                <a href="https://emcrusta.github.io/fcc-personal-portfolio/">View Project</a>
+                                                </li>
+                        <li>
+                                        <figure>
+                                            <img src="./imgs/react_flashcards.JPG" alt="react flashcards project">
+                                            <figcaption><h3>Hindi Flashcards</h3></figcaption>
+                                        </figure>
+                                        <p>A flashcard application created in React. Designed to feature various flashcard packs in JSON format. </p>
+                                        <a href="https://github.com/emcrusta/hindi-flashcards">View Project</a>
+                                        
+                                    </li>
+                    </ul>
+                </section>
+            </div>
+			<div id="contact_section">
+                <section class="content_section container">
+                    <h2 class="title">Contact Me</h2>  
+                    
+                    <ul class="social-icons row">
+                        <li class="col contact_email contact-item">
+                            <a class="row" href="mailto:emcrusta@gmail.com"><i class="fas fa-envelope-square"></i>Email</a>
+                        </li>
+                        <li class="col contact_github contact-item"><a class="row" href="https://github.com/emcrusta"><i class="fab fa-github-square"></i>Github</a></li>
+                        <li class="col contact_linkedin contact-item"><a class="row" href="https://www.linkedin.com/in/emcrusta/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                    </ul>
+                </section>
+            </div>
 		</main>
         <footer class="footer">
             <div class="container row">

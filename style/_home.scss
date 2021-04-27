@@ -6,11 +6,12 @@
 			rgba($dark-color, 0.05)
 		),
 		url('../imgs/pexels-adrien-olichon-2387793.jpg') center top;
+	background-blend-mode: multiply;
 	background-size: cover;
 
 	.hero__title {
 		margin: 0;
-		margin-top: 30vh;
+		margin-top: 15vh;
 		padding: 0.2em 0;
 		text-transform: uppercase;
 		text-align: center;
@@ -28,7 +29,11 @@
 	}
 }
 
-.about_section {
+.content_section {
+	padding: 3em 0;
+}
+
+#about_section {
 	.col {
 		padding-bottom: 1em;
 	}
@@ -39,7 +44,7 @@
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 1rem;
+	grid-gap: 2rem;
 
 	li {
 		background-color: rgba(252, 252, 252, 0.3);
@@ -91,28 +96,6 @@
 			&:hover {
 				@include transition-ease;
 				background-color: $accent-green;
-			}
-		}
-	}
-}
-
-.contact_section {
-	padding-bottom: 4rem;
-
-	.row {
-		display: flex;
-		justify-content: space-evenly;
-	}
-	.social-icons {
-		list-style-type: none;
-
-		i {
-			font-size: 4rem;
-			color: $dark-color;
-
-			&:hover {
-				@include transition-ease;
-				color: $accent-green;
 			}
 		}
 	}
