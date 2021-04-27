@@ -102,7 +102,7 @@
   min-height: 200px;
   background-color: #1f2833;
   color: white;
-  padding: 2em;
+  padding: 2em 0;
 }
 
 .footer .row {
@@ -208,9 +208,6 @@
 #contact_section .contact-item a {
   color: #1f2833;
   text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #contact_section .contact-item a:hover {
@@ -231,7 +228,7 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   #contact_section .contact-item {
     font-size: 1.5rem;
   }
@@ -239,9 +236,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

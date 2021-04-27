@@ -20,7 +20,6 @@
 		a {
 			color: $dark-color;
 			text-decoration: none;
-			align-items: center;
 
 			&:hover {
 				@include transition-ease;
@@ -44,7 +43,7 @@
 	}
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
 	#contact_section {
 		.contact-item {
 			font-size: 1.5rem;
@@ -52,7 +51,7 @@
 
 		.row {
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: space-between;
 		}
 	}
 }
