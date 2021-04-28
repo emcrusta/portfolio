@@ -33,6 +33,10 @@
   padding-bottom: 1em;
 }
 
+#about_section .col p {
+  line-height: 1.8;
+}
+
 #about_section .profile_photo {
   margin: 0 auto;
   margin-bottom: 1em;
@@ -299,7 +303,6 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.8;
 }
 
 h1,
