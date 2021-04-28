@@ -8,7 +8,7 @@
 
 .hero .hero__title {
   margin: 0;
-  margin-top: 15vh;
+  margin-top: 10vh;
   padding: 0.2em 0;
   text-transform: uppercase;
   text-align: center;
@@ -31,6 +31,21 @@
 
 #about_section .col {
   padding-bottom: 1em;
+}
+
+#about_section .profile_photo {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  border-radius: 100%;
+  max-height: 150px;
+}
+
+#about_section .profile_photo.sml {
+  display: block;
+}
+
+#about_section .profile_photo.lrg {
+  display: none;
 }
 
 .projects {
@@ -81,6 +96,8 @@
 }
 
 .projects li a {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   text-decoration: none;
   background-color: #1f2833;
   border-radius: 0.25rem;
@@ -93,8 +110,6 @@
 }
 
 .projects li a:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   background-color: #45a29e;
 }
 
@@ -113,6 +128,33 @@
 
 .footer .col {
   padding-bottom: 1em;
+  line-height: 2rem;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer .photo-credit {
+  font-size: 0.9rem;
+  opacity: 80%;
+}
+
+@media (min-width: 600px) {
+  .hero .hero__title {
+    margin-top: 20vh;
+  }
+  #about_section .profile_photo {
+    max-height: 250px;
+  }
+  #about_section .profile_photo.sml {
+    display: none;
+  }
+  #about_section .profile_photo.lrg {
+    display: block;
+    justify-self: flex-end;
+    margin-right: 0;
+  }
 }
 
 .nav {
@@ -125,6 +167,8 @@
 }
 
 .nav a {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   letter-spacing: 0.12rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -134,8 +178,6 @@
 }
 
 .nav a:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   color: #66fcf1;
 }
 
@@ -206,13 +248,13 @@
 }
 
 #contact_section .contact-item a {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: #1f2833;
   text-decoration: none;
 }
 
 #contact_section .contact-item a:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   color: #45a29e;
 }
 
@@ -257,6 +299,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
 }
 
 h1,

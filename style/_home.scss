@@ -11,7 +11,7 @@
 
 	.hero__title {
 		margin: 0;
-		margin-top: 15vh;
+		margin-top: 10vh;
 		padding: 0.2em 0;
 		text-transform: uppercase;
 		text-align: center;
@@ -36,6 +36,21 @@
 #about_section {
 	.col {
 		padding-bottom: 1em;
+	}
+
+	.profile_photo {
+		margin: 0 auto;
+		margin-bottom: 1em;
+		border-radius: 100%;
+		max-height: 150px;
+
+		&.sml {
+			display: block;
+		}
+
+		&.lrg {
+			display: none;
+		}
 	}
 }
 
@@ -83,6 +98,7 @@
 		}
 
 		a {
+			@include transition-ease;
 			text-decoration: none;
 			background-color: $dark-color;
 			border-radius: 0.25rem;
@@ -94,7 +110,6 @@
 			color: #fff;
 
 			&:hover {
-				@include transition-ease;
 				background-color: $accent-green;
 			}
 		}
@@ -113,5 +128,39 @@
 
 	.col {
 		padding-bottom: 1em;
+		line-height: 2rem;
+	}
+
+	a {
+		color: white;
+	}
+
+	.photo-credit {
+		font-size: 0.9rem;
+		opacity: 80%;
+	}
+}
+
+@media (min-width: 600px) {
+	.hero {
+		.hero__title {
+			margin-top: 20vh;
+		}
+	}
+
+	#about_section {
+		.profile_photo {
+			max-height: 250px;
+
+			&.sml {
+				display: none;
+			}
+
+			&.lrg {
+				display: block;
+				justify-self: flex-end;
+				margin-right: 0;
+			}
+		}
 	}
 }

@@ -18,11 +18,11 @@
 		}
 
 		a {
+			@include transition-ease;
 			color: $dark-color;
 			text-decoration: none;
 
 			&:hover {
-				@include transition-ease;
 				color: $accent-green;
 			}
 

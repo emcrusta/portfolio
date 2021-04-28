@@ -6,6 +6,7 @@
 	}
 
 	a {
+		@include transition-ease;
 		letter-spacing: 0.12rem;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -14,7 +15,6 @@
 		color: white;
 
 		&:hover {
-			@include transition-ease;
 			color: $bright-color;
 		}
 	}
