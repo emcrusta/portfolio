@@ -52,6 +52,33 @@
   display: none;
 }
 
+#about_section .values {
+  list-style-type: none;
+}
+
+#about_section .values li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0;
+}
+
+#about_section .values li i {
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 18%;
+  color: #45a29e;
+}
+
+#about_section .values li .value_item {
+  width: 80%;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 .projects {
   padding: 0;
   list-style-type: none;
@@ -139,11 +166,6 @@
   color: white;
 }
 
-.footer .photo-credit {
-  font-size: 0.9rem;
-  opacity: 80%;
-}
-
 @media (min-width: 600px) {
   .hero .hero__title {
     margin-top: 20vh;
@@ -156,8 +178,6 @@
   }
   #about_section .profile_photo.lrg {
     display: block;
-    justify-self: flex-end;
-    margin-right: 0;
   }
 }
 
@@ -318,6 +338,11 @@ h3 {
   color: #0b0c10;
   font-size: 3rem;
   padding-bottom: 1em;
+}
+
+.note {
+  font-size: 0.8em;
+  opacity: 80%;
 }
 
 .container {

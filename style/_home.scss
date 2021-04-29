@@ -56,6 +56,31 @@
 			display: none;
 		}
 	}
+
+	.values {
+		list-style-type: none;
+
+		li {
+			display: flex;
+			align-items: center;
+			// border: 2px solid salmon;
+			padding: 1em 0;
+
+			i {
+				font-size: 2rem;
+				margin: 0 auto;
+				// border: 2px solid blue;
+				width: 18%;
+				color: $accent-green;
+			}
+			.value_item {
+				// border: 2px solid green;
+				width: 80%;
+				font-size: 1.1rem;
+				font-weight: 600;
+			}
+		}
+	}
 }
 
 .projects {
@@ -138,11 +163,6 @@
 	a {
 		color: white;
 	}
-
-	.photo-credit {
-		font-size: 0.9rem;
-		opacity: 80%;
-	}
 }
 
 @media (min-width: 600px) {
@@ -162,8 +182,6 @@
 
 			&.lrg {
 				display: block;
-				justify-self: flex-end;
-				margin-right: 0;
 			}
 		}
 	}
