@@ -13,7 +13,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #66fcf1;
-  font-size: 5rem;
+  font-size: 4rem;
   border-bottom: 2px solid #66fcf1;
 }
 
@@ -21,7 +21,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #66fcf1;
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin: 0.5em 0;
 }
 
@@ -169,6 +169,10 @@
 @media (min-width: 600px) {
   .hero .hero__title {
     margin-top: 20vh;
+    font-size: 5rem;
+  }
+  .hero .hero__subtitle {
+    font-size: 3rem;
   }
   #about_section .profile_photo {
     max-height: 250px;
