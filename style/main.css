@@ -264,18 +264,11 @@
   padding: 0.5em;
 }
 
-#contact_section .contact .contact-form input:focus,
-#contact_section .contact .contact-form textarea:focus,
-#contact_section .contact .contact-form textarea:valid {
-  display: inline;
-  color: #999;
-}
-
 #contact_section .contact .contact-form .styled-input input {
   width: 100%;
   margin: 1rem 0;
-  border-radius: 0.25rem;
-  min-height: 2.5em;
+  border: none;
+  min-height: 2.5rem;
   padding: 0.5em;
 }
 
@@ -287,6 +280,14 @@
 #contact_section .contact .contact-form .styled-input.wide textarea {
   padding: 0.5em;
   min-height: 250px;
+  border: none;
+}
+
+#contact_section .contact .contact-form input:focus,
+#contact_section .contact .contact-form textarea:focus {
+  font-size: 0.8rem;
+  color: #999;
+  outline: 1px solid #ccc;
 }
 
 #contact_section .contact button {
