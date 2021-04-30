@@ -1,12 +1,6 @@
 .hero {
 	min-height: 100vh;
-	background: linear-gradient(
-			to right,
-			rgba($dark-color, 0.5),
-			rgba($dark-color, 0.05)
-		),
-		url('../imgs/pexels-adrien-olichon-2387793.jpg') center top;
-	background-blend-mode: multiply;
+	background: url('../imgs/pexels-adrien-olichon-2387793.jpg'), #000;
 	background-size: cover;
 
 	.hero__title {
