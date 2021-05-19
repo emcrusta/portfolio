@@ -120,7 +120,7 @@
 			padding: 1rem 0.75rem;
 		}
 
-		a {
+		.btn {
 			@include transition-ease;
 			text-decoration: none;
 			background-color: $dark-color;

@@ -55,12 +55,8 @@
 }
 
 #about_section .values li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 1em 0;
 }
 
@@ -80,10 +76,8 @@
 .projects {
   padding: 0;
   list-style-type: none;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 2rem;
 }
 
@@ -124,8 +118,7 @@
   padding: 1rem 0.75rem;
 }
 
-.projects li a {
-  -webkit-transition: all 0.5s ease-in-out;
+.projects li .btn {
   transition: all 0.5s ease-in-out;
   text-decoration: none;
   background-color: #1f2833;
@@ -138,7 +131,7 @@
   color: #fff;
 }
 
-.projects li a:hover {
+.projects li .btn:hover {
   background-color: #45a29e;
 }
 
@@ -150,9 +143,7 @@
 }
 
 .footer .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer .col {
@@ -193,7 +184,6 @@
 }
 
 .nav a {
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   letter-spacing: 0.12rem;
   text-transform: uppercase;
@@ -209,12 +199,8 @@
 
 @media (min-width: 450px) {
   .nav .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   .nav li + li {
     margin-left: 1em;
@@ -289,7 +275,6 @@
 }
 
 #contact_section .contact button {
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   text-decoration: none;
   background-color: #1f2833;
@@ -323,16 +308,11 @@
 }
 
 #contact_section .contact-item .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #contact_section .contact-item a {
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   color: #1f2833;
   text-decoration: none;
@@ -359,12 +339,8 @@
     font-size: 1.5rem;
   }
   #contact_section .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   #contact_section .row .styled-input {
     width: 100%;
@@ -377,8 +353,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -432,13 +407,9 @@ h3 {
 
 @media screen and (min-width: 600px) {
   #about_section {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   #about_section .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #about_section .col {
@@ -448,16 +419,13 @@ h3 {
     margin-left: 1.5em;
   }
   .footer .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
 
 @media (min-width: 370px) {
   .projects {
-    -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }
 /*# sourceMappingURL=main.css.map */
